@@ -1,0 +1,24 @@
+ <!-- <nav >
+      <a routerLinkActive="active" routerLink="inventory/List" >Listing</a>  
+    </nav>
+    <nav >
+      <a routerLinkActive="active" routerLink="inventory/add" >Screen</a> 
+    </nav> -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-default">  
+      <a class="navbar-brand">Inventory</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="inventory/List">List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="inventory/product/add" >Create</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>  

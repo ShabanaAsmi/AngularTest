@@ -1,0 +1,13 @@
+ [ 
+     {"name": "iPhone", "product": "iPhone x", "price": 50000, "description": "Configuration Info" },
+     { "name": "One Plus","product": "One Plus 7", "price": 45000, "description": "Configuration Info"},
+     { "name":"Micromax","product": "Micromax K7", "price": 28000, "description": "Configuration Info" },
+     {"name": "Samsung", "product": "Samsung J7", "price": 30000, "description": "Configuration Info" },
+     { "name": "Realme","product": "Realme 8", "price": 15000, "description": "Configuration Info"},
+     {"name": "Readme", "product": "Readme Pro Max", "price": 15000, "description": "Configuration Info" },
+     {"name": "Index", "product": "Index Max", "price": 6000, "description": "Configuration Info" },
+     {"name": "Vivo", "product": "Vivo Y19", "price": 15000, "description": "Configuration Info"},
+     { "name": "Moto","product": "Moto G5", "price": 18500, "description": "Configuration Info" },
+     { "name": "Oppo", "product": "Oppo A12", "price": 25000, "description": "Configuration Info" }
+]
+  

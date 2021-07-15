@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {"id": "145e4a7d-1de8-4842-a8b2-7fed11768290" ,"name": "iPhone", "product": "iphone 12 Pro Max", "price": 130000, "description": "Super Retina XDR OLED" },
+    {"id": "145e4a71-1de8-4842-a8b2-7fed11768296" ,"name": "Lenovo", "product": "Lenovo 11", "price": 50000, "description": "Configuration Info" },
+    { "id": "9902c41f-9e13-426c-b475-b5cc2d4cb4b6","name": "One Plus","product": "One Plus 7", "price": 45000, "description": "Battery Capacity 3700mAh"},
+    { "id": "9a1153a4-b457-4687-b64a-2e6ac5d4cedf","name":"Micromax","product": "Micromax K7", "price": 28000, "description": "Storage 128GB" },
+    {"id": "ac89b777-cd36-4c25-9dba-608ae48ded6d" ,"name": "Samsung", "product": "Samsung J7", "price": 30000, "description": "Good Quality" },
+    {"id": "c1c59583-96f7-4330-867a-d57d65045dcc", "name": "Realme","product": "Realme 8", "price": 15000, "description": "Lite weight"},
+    {"id": "f6fcd57f-252a-4798-a457-efe8b7b55abe","name": "Readme", "product": "Readme Pro Max", "price": 15000, "description": "Front Camera 16MP" },
+    {"id": "bd7ab973-cfda-49e2-a602-65c66d093822","name": "Jio", "product": "Jio 8", "price": 6000, "description": "Loud Stereo Speakers" },
+    {"id": "7666c2ca-226b-43e1-9ff1-2d4aca57773c","name": "Vivo", "product": "Vivo Y19", "price": 15000, "description": "All-Day Battery Life"},
+    { "id": "518da2f5-8a25-4ca6-832d-ae12e9bbaa15","name": "Moto","product": "Moto G5", "price": 18500, "description": "Display 6.41-inch" },
+    { "id": "548b7c91-0edf-4631-90ac-cd5fd47931fe","name": "Oppo", "product": "Oppo A12", "price": 25000, "description": "Qualcomm Snapdragon 855" },
+    {"id": "518da2ff-8a25-4ca6-832d-ae12e9bbaa17" ,"name": "Intex", "product": "Intex Aqua Pride Grey", "price": 40000, "description": "TFT Display" } 
+  ], 
+  "comments": [],
+  "profile": { 
+    "name": "typicode"
+  }
+}

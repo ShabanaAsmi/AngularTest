@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="container-content inventory-create">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2>Inventory Listing</h2>
+                <div class="row float-right">
+                    <div class="col-md-12 search">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <mat-icon>search</mat-icon>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" (keyup)="applyFilter($event.target.value)"
+                                placeholder="Search..." aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <table mat-table [dataSource]="dataSource" matSort matSortActive="name" matSortDisableClear
+                matSortDirection="asc" class="col-md-12 mat-elevation-z8"> 
+                    <ng-container *ngFor="let column of columns; let i = index" [matColumnDef]="column.field">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> {{column.display}}</th>
+                        <span *ngIf="column.field !== 'action'">
+                            <td mat-cell *matCellDef="let element">
+                                {{element[column.field]}} 
+                            </td> 
+                        </span>
+                        <span *ngIf="column.field == 'action' && column.field !== 's.no'">
+                            <td mat-cell *matCellDef="let element">
+                                <a class="cursor edit">
+                                    <mat-icon (click)="editItems(element)">edit_outline</mat-icon>
+                                </a>
+                                <a class="cursor delete">
+                                    <mat-icon (click)="deleteItems(element)">delete_outline</mat-icon>
+                                </a>
+                            </td>
+                        </span>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+                <div class='table-grid-msg alert alert-info' *ngIf='dataSource && dataSource.data.length === 0'>No
+                    Records Found</div> 
+                <div class='table-grid-msg alert alert-info'
+                    *ngIf='dataSource && dataSource.data.length != 0 && dataSource.filteredData.length === 0'>
+                    No Matching Records Found</div>
+                <mat-paginator [pageSizeOptions]="[5,10, 20]" showFirstLastButtons></mat-paginator>
+
+
+              <app-inventory-child [parentCount]="parentCount" (valueChange)='displayCounter($event)'></app-inventory-child>
+ 
+            </div>
+            <div class="col-md-2">
+            </div> 
+        </div>
+    </div>
+</div>
